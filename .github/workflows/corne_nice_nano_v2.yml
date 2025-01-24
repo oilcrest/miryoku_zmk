@@ -9,5 +9,6 @@ jobs:
     secrets: inherit
     with:
       board: '["nice_nano_v2"]'
-      shield: '["corne_left","corne_right"]'
+      shield: '["choc-corne_left","choc-corne_right"]'
+      cmake-args: '[ "-DCONFIG_ZMK_POINTING=y" "-DCONFIG_ZMK_POINTING_SMOOTH_SCROLLING=y" ]'
       custom_config: '["#define MIRYOKU_TAP_QWERTY\n#define MIRYOKU_EXTRA_QWERTY"]'
